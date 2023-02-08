@@ -3,6 +3,7 @@ using DrWatson
 
 using Test
 
+#--------------------------------------------------------------------------------------------- Equation (1) 
 function check_equivariance(ϕ)
     # random Transformation Matrix
     T = [1 0 0 0
@@ -18,6 +19,13 @@ end
 # Testing equivariance of f(x) = x
 f(x)    =    2x
 check_equivariance(f)
+
+#  ---------------------------------------------------------------------------------------------- Equation (2)
+g(r, u, v) = [  
+                cos(r * π/2)    -sin(r * π/2)   u; 
+                sin(r * π/2)    cos(r * π/2)    v; 
+                0               0               1;
+             ]
 
 
 

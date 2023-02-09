@@ -3,9 +3,11 @@
 This code base is using the [Julia Language](https://julialang.org/) and
 [DrWatson](https://juliadynamics.github.io/DrWatson.jl/stable/)
 to make a reproducible scientific project named
-> G_CNN
+> Group Equivariance CNN
 
 It is authored by Vikas Chidananda.
+
+This is my attempt at implementing the paper [1] in Julia. The code is not optimized for speed and is not meant to be used for any serious purpose. It is just a learning exercise for me.
 
 To (locally) reproduce this project, do the following:
 
@@ -28,3 +30,9 @@ using DrWatson
 @quickactivate "G_CNN"
 ```
 which auto-activate the project and enable local path handling from DrWatson.
+
+# References
+   [1] [Taco S.Cohen, Max Welling, "Group Equivariance Convolutional Networks"](https://arxiv.org/pdf/1602.07576.pdf)
+
+
+
